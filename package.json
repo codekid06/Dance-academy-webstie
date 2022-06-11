@@ -1,0 +1,19 @@
+{
+  "name": "dance-academy-website",
+  "version": "1.0.0",
+  "description": "This is my website",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "codekid06"
+  },
+  "author": "yash",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.1",
+    "pug": "^3.0.2"
+  }
+}
