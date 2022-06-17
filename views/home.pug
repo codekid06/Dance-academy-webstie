@@ -1,19 +1,13 @@
-doctype html 
-html 
-  head 
+extends base.pug 
+  
+block scripts
+  script(src="/static/index.js")
+
+block style 
     style 
-      include ../static/style.css 
-  body 
-    nav#navbar.top
-        ul
-            div#logo
-               img(src="/static/img/img2.png")
-               |UDA
-            li #[a(href="/") Home] 
-            li #[a(href="/") About] 
-            li #[a(href="/") Class Info]
-            li #[a(href="/") Contact us] 
-            li #[a(href="/") Services] 
+      include ../static/style.css
+
+block content
     section#introsection 
           div|Welcome to Ultimate Dance Academy 
           div.small|Eat sleep Dance Repeate
@@ -47,8 +41,3 @@ html
        img(src="/static/img/microsoft.png",alt="Sponser Img",Class="spimg")
        img(src="/static/img/sponser 3.png",alt="Sponser Img",Class="spimg")
           
-
-    footer#footer 
-          |Copyright © 2022 UlitimateDanceAcademy.com | All rights reserved
-    script 
-      include ../static/index.js
